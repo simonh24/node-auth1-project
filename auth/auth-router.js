@@ -1,7 +1,7 @@
-const bcryptjs = require("bcryptjs"); // << add this line
+const bcryptjs = require("bcryptjs");
 const router = require("express").Router();
 
-const Users = require("../users/users-model.js"); // update path
+const Users = require("../users/users-model.js");
 
 router.post("/register", (req, res) => {
     let creds = req.body;
